@@ -1,0 +1,30 @@
+
+
+
+const genderType="female";//global declaration
+
+function printGender(){
+
+    let color="brown";//function scope
+
+    if(genderType.startsWith("female"))
+    {
+        var age=30;
+        let color="pink"
+        console.log("she/her favourite color is "+color);
+        
+    }
+else{
+    var age=35;
+    console.log("He/Him : "+color);
+    
+
+    }
+
+    console.log(age);
+    console.log(color);
+    
+}
+
+printGender();
+console.log(genderType);
